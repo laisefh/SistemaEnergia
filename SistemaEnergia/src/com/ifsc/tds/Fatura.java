@@ -1,7 +1,8 @@
 package com.ifsc.tds;
+
 //popipo
 
-public class Fatura {
+public class Fatura extends Tarifa{
 	
 	private int faturaId;
 	private int mesAno;
@@ -45,8 +46,13 @@ public class Fatura {
 	}
 
 	public double calcularValorFatura() {
-		double resultado = 0; //criei esta variavel apenas para retornar algo e nao apresentar erro
-		return resultado;
+		double valorfatura;
+		if(consumo <= tarResidencial1) {
+			valorfatura = consumo * tarResidencial1;
+		}else if(consumo > tarResidencial1) {
+			valorfatura = consumo * tarResidencial2;}
+		
+		return 0;
 	}
 	
 	public String toString() {
@@ -61,7 +67,9 @@ public class Fatura {
 		return texto;
 	}
 	
-	public void imprimirFatura() {
-		//arrumar este método colocando o vetor
+	public void imprimirFatura(Fatura[] fatura) {
+		for(Fatura f : fatura) {
+			System.out.println(f.faturaId);
+		}
 	}
 }
