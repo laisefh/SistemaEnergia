@@ -11,6 +11,10 @@ public class Endereco {
 	private String cidade;
 	
 	private String Estado;
+	
+	public Endereco() {
+		
+	}
 
 	public String getRua() {
 		return rua;

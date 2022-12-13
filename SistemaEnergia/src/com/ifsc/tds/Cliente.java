@@ -3,6 +3,10 @@ package com.ifsc.tds;
 public class Cliente {
 
 	private String nome;
+	
+	public Cliente() {
+		
+	}
 
 
 	public String getNome() {
