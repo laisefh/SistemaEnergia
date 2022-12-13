@@ -5,11 +5,12 @@ public class Uc {
 	private int ucld;
 	private int leituraAnterior;
 	private int leituraAtual;
-	Cliente cliente = new Cliente();
-	//Endereco endereco = new Endereco();
+	private Cliente cliente;
 	
-	
-	public Uc() {}
+
+	public Uc() {
+		
+	}
 
 	public int getUcld() {
 		return ucld;
@@ -33,6 +34,15 @@ public class Uc {
 
 	public void setLeituraAtual(int leituraAtual) {
 		this.leituraAtual = leituraAtual;
+	}
+	
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 	public String toString() {

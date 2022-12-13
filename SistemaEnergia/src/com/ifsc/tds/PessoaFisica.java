@@ -3,6 +3,10 @@ package com.ifsc.tds;
 public class PessoaFisica extends Cliente {
 	
 	private String CPF;
+	
+	public PessoaFisica() {
+		
+	}
 
 	public String getCPF() {
 		return CPF;

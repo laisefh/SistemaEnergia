@@ -3,6 +3,10 @@ package com.ifsc.tds;
 public class PessoaJuridica extends Cliente{
 	
 	private String CNPJ;
+	
+	public PessoaJuridica() {
+		
+	}
 
 	public String getCNPJ() {
 		return CNPJ;
