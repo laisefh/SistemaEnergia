@@ -20,7 +20,7 @@ public class PessoaJuridica extends Cliente{
 		String texto = "";
 		
 		texto = "-------------------------"
-				+ "\n CPF: " + getCNPJ();
+				+ "\n CNPJ: " + getCNPJ();
 		
 		return texto;
 	}

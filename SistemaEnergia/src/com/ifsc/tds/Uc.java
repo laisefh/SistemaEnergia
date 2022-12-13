@@ -51,16 +51,22 @@ public class Uc {
 		texto = "-------------------------"
 				+ "\n UCLD: " + getUcld()
 				+ "\n Leitura Anterior: " + getLeituraAnterior()
-				+ "\n Leitura Atual: " + getLeituraAtual();
+				+ "\n Leitura Atual: " + getLeituraAtual()
+				+ "\n Cliente: " + getCliente()
+				+ "\n Id da Unidade Consumidora: " + getUcld();
 		
 		return texto;
 	}
 	
 	public int faturar(int leitura) {
-		return 0;
+		leituraAnterior = leituraAtual;
+		leituraAtual = leitura;
+		return pegarConsumo();
 	}
 	
 	public int pegarConsumo() {
-		return 0;
+		int consumo = leituraAnterior - leituraAtual;
+		System.out.println("Diferença de consumo: " + consumo);
+		return consumo;
 	}
 }
