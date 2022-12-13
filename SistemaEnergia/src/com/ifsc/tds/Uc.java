@@ -63,7 +63,7 @@ public class Uc {
 		leituraAtual = leitura;
 		return pegarConsumo();
 	}
-	//c
+	//cc
 	
 	public int pegarConsumo() {
 		int consumo = leituraAnterior - leituraAtual;
