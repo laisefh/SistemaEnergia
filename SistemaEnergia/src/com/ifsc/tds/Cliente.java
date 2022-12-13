@@ -36,7 +36,6 @@ public class Cliente {
 
 	public String toString() {
 		String texto = "";
-		
 		texto = "-------------------------"
 				+ "\n ID Cliente: " + getClienteId()
 				+ "\n Nome: " + getNome()

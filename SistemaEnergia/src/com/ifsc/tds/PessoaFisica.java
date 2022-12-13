@@ -5,6 +5,7 @@ public class PessoaFisica extends Cliente {
 	private String CPF;
 	
 	public PessoaFisica() {
+		super(int clienteId, String nome, String endereco);
 		
 	}
 
