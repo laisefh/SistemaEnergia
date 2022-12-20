@@ -17,6 +17,7 @@ public class PessoaJuridica extends Cliente{
 	}
 	
 	public String toString() {
+		super.toString();
 		String texto = "";
 		
 		texto = "-------------------------"
