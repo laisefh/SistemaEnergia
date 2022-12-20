@@ -4,32 +4,26 @@ package com.ifsc.tds;
 public class Teste {	
 
 	public static void main(String[] args) {
+		Endereco endereco = new Endereco();
 		
-		Cliente testeCliente = new PessoaFisica();
-		Endereco endereco1 = new Endereco();
+		endereco.setCep("89253600");
+		endereco.setCidade("Jaragua ");
+		endereco.setEstado("SC");
+		endereco.setNumero(445);
+		endereco.setRua("Francisco");
+		PessoaFisica cliente1 = new PessoaFisica("11111", 1111, "Laise", endereco);
 		
-		if(testeCliente instanceof PessoaFisica) {
-			PessoaFisica testeCliente1 = (PessoaFisica) testeCliente;
-			testeCliente1.setCPF("111.111.111-11");
+			System.out.println(cliente1.toStringg());
+			System.out.println(cliente1.toString());
 			
-			System.out.println(testeCliente1.toString());
+			PessoaJuridica cliente2 = new PessoaJuridica("11111", 1111, "Laise", endereco);
+			System.out.println(cliente2.toStringg());
+			System.out.println(cliente2.toString());
+
+
+
 			
-		}
 		
-		
-		endereco1.setCep("89253");
-		endereco1.setCidade("Jaragua");
-		endereco1.setEstado("sc");
-		endereco1.setNumero(445);
-		endereco1.setRua("FRancisco Hruschka");
-		
-		testeCliente.setClienteId(123);
-		testeCliente.setEndereco(endereco1);
-		testeCliente.setNome("Laise");
-		
-		System.out.println(testeCliente.toString());
-		System.out.println(testeCliente.getEndereco());
-		System.out.println();
 	}
 
 }

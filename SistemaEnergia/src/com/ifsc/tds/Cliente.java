@@ -6,7 +6,10 @@ public class Cliente {
 	private String nome;
 	private Endereco endereco;
 	
-	public Cliente() {
+	public Cliente(int clienteId, String nome, Endereco endereco) {
+		this.clienteId = clienteId;
+		this.endereco = endereco;
+		this.nome = nome;
 		
 	}
 
@@ -34,7 +37,7 @@ public class Cliente {
 		this.endereco = endereco;
 	}
 
-	public String toString() {
+	public String toStringg() {
 		String texto = "";
 		texto = "-------------------------"
 				+ "\n ID Cliente: " + getClienteId()

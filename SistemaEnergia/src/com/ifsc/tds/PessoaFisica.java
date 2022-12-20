@@ -4,8 +4,9 @@ public class PessoaFisica extends Cliente {
 	
 	private String CPF;
 	
-	public PessoaFisica() {
-		
+	public PessoaFisica(String CPF, int clienteId, String nome, Endereco endereco) {
+		super(clienteId, nome, endereco);
+		this.CPF = CPF;
 	}
 
 	public String getCPF() {
@@ -17,7 +18,7 @@ public class PessoaFisica extends Cliente {
 	}
 	
 	public String toString() {
-		super.toString();
+		this.toStringg();
 		String texto = "";
 		
 		texto = "-------------------------"

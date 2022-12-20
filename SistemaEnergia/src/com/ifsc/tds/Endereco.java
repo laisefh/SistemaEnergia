@@ -59,7 +59,7 @@ public class Endereco {
 	public String toString() {
 		String texto = "";
 		
-		texto = "-------------------------"
+		texto = "\n-------------------------"
 				+ "\n Rua: " + getRua()
 				+ "\n Número: " + getNumero()
 				+ "\n Cep: " + getCep()

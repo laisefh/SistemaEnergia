@@ -4,8 +4,10 @@ public class PessoaJuridica extends Cliente{
 	
 	private String CNPJ;
 	
-	public PessoaJuridica() {
-		
+	public PessoaJuridica(String CNPJ, int clienteId, String nome, Endereco endereco) {
+		super(clienteId, nome, endereco);
+
+		this.CNPJ=CNPJ;
 	}
 
 	public String getCNPJ() {
@@ -17,7 +19,7 @@ public class PessoaJuridica extends Cliente{
 	}
 	
 	public String toString() {
-		super.toString();
+		this.toStringg();
 		String texto = "";
 		
 		texto = "-------------------------"
