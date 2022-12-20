@@ -12,8 +12,12 @@ public class Endereco {
 	
 	private String Estado;
 	
-	public Endereco() {
-		
+	public Endereco(String rua, int numero, String cep, String cidade, String Estado){
+		this.rua=rua;
+		this.numero=numero;
+		this.cep=cep;
+		this.cidade=cidade;
+		this.Estado=Estado;
 	}
 
 	public String getRua() {
