@@ -5,7 +5,6 @@ public class PessoaFisica extends Cliente {
 	private String CPF;
 	
 	public PessoaFisica() {
-		super(int clienteId, String nome, String endereco);
 		
 	}
 
@@ -18,6 +17,7 @@ public class PessoaFisica extends Cliente {
 	}
 	
 	public String toString() {
+		super.toString();
 		String texto = "";
 		
 		texto = "-------------------------"
